@@ -57,9 +57,7 @@ public void hapus(long id){
         Query query = em.createQuery("SELECT e FROM pesawatTiket e");
         List<pesawatTiket> result = query.getResultList();
         for (pesawatTiket e : result) {
-                 System.out.println("ID AGEN :"+ e.getId() + "\n NAMA :" + e.getNama()+"\n Alamat :"+ e.getAlamat());   
+                 
+                 System.out.println("ID AGEN :"+ e.getId()+ "\n NAMA :" + e.getNama()+"\n Alamat :"+ e.getAlamat());   
         }
-    }
-}
-
-
+  }}
